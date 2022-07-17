@@ -131,6 +131,7 @@ private String arrayToString(int[] arr) {
 ```
 
 * Pitfall: multiplication calculation
+  * **Think carefully the loop conditions, especially when the counters have constraints with each other**
   * For $k$
     * Multiplication only happens when $k: 0 \rightarrow k_{max} - 1$ where $k_{max} = result.length - 1$
     * For $k = k_{max}$, no multiplication occurs, it only stores the previous carry
@@ -142,6 +143,7 @@ private String arrayToString(int[] arr) {
     * For loop range $i = 0, i \leq k \land i \leq i_{max}$ 
   * For constraint 3
     * If statement, if $j > j_{max}$, skip
+
 
 
 
